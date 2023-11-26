@@ -1,0 +1,56 @@
+.bg-cabecalho-superior{
+    background-color: red;
+}
+.bg-azul-marinho{
+    background-color: #06073A;
+}
+.gb-azul-marinho2{
+    background-color: #262637;
+}
+
+.typing-animation_parte1{
+    animation: pisca_main_h1 1000ms infinite normal;
+}
+@keyframes pisca_main_h1{
+    from{
+        color: blue;
+    }
+    to{
+        color: red;
+    }
+}
+.typing-escrita-parte1{
+    animation: efeito_escrita 5s steps(120) infinite  normal both;
+}
+@keyframes efeito_escrita{
+    from{
+        width: 0;
+    }
+    to{
+        width: 22em;
+    }
+}
+.typing-border-color{
+    animation: efeito_borda 1s steps(120) infinite  normal both;
+}
+@keyframes efeito_borda{
+    from{
+        border-color: white;
+    }
+    to{
+        border-color: transparent;
+    }
+}
+.borda{
+    border: 3px solid #fff;
+}
+/* celulares */
+@media (max-width: 400px){
+.imagem-cabecalho{
+    width: 35vw;
+}
+.colunas{
+    display: flex;
+    align-items: center;
+}
+}
